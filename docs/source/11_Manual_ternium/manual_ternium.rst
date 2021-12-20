@@ -20,18 +20,10 @@ Glossary
 	:scale: 75 %
 	:align: center
 
-№	Name	Description
-1	Recovery motor	Recovery power transmission train. To be used to safely lower (or shortly raise) the load in case of emergency.
-2	Recovery transmission	
-3	Recovery engaged switch (RS)	Recovery transmission train engaged
-4	Unscrewing enable switch (USCRE)	Stops and prevent further hoist movement in this direction
-5	Screwing enable switch (SCRE)	
-6	Worm switch cam	Acts on SCRE and USCRE
-7	Recovery engagement nut with switch cam	Engages the recovery transmission to the worm and acts on RS
-8	MS motor	Allows normal operation following
-9	Friction worm wheel	Acts as brake if the external toothed ring is stopped by the worm 
-10	Worm	
-
+.. csv-table:: table
+   :file: 06_tables/MSunitComponents-test.csv
+   :widths: 10, 40, 50
+   :header-rows: 1
 
 Figure 2 MS unit components
  
@@ -79,8 +71,10 @@ a) C7 connector
  
 b) C6 connector
 
-Connector 	№	Name	Description
-1	NC	Not connected
+=========	=== 	=====   	===========
+Connector	№		Name		Description
+=========	=== 	=====   	===========
+1			NC		Not connected
 2	TEMP-	Motor temperature sensor Lo
 3	COS-	Cosine Lo
 4	SIN-	Sine Lo

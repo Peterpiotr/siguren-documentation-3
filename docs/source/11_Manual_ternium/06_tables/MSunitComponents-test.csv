@@ -1,0 +1,11 @@
+﻿№,Name,Description
+1,Recovery motor,Recovery power transmission train. To be used to safely lower (or shortly raise) the load in case of emergency.
+2,Recovery transmission,.. image:: 05_images/glossaryImage.png
+3,Recovery engaged switch (RS),Recovery transmission train engaged
+4,Unscrewing enable switch (USCRE),Stops and prevent further hoist movement in this direction
+5,Screwing enable switch (SCRE),test
+6,Worm switch cam,Acts on SCRE and USCRE
+7,Recovery engagement nut with switch cam,Engages the recovery transmission to the worm and acts on RS
+8,MS motor,Allows normal operation following
+9,Friction worm wheel,Acts as brake if the external toothed ring is stopped by the worm 
+10,Worm,test
