@@ -18,6 +18,8 @@ Contents
 
 .. toctree::
 
+    11_Manual_ternium/manual_ternium
+
     Getting started
         Basic knowledge
             Operating principle
