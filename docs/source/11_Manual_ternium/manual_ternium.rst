@@ -93,11 +93,13 @@ d) General view of MS motor
 Figure 7 Connectors C6 and C7
 
 .. warning::
-	ATTENTION
- 	C6 and C7 must be connected according specification! Wrong connection can cause motor damage!
+    ATTENTION
+    C6 and C7 must be connected according specification! Wrong connection can cause motor damage!
 
- 
-	Connector C8 (figure 6, point 1) is MS recovery motor electrical connector. Recovery motor is DC motor controlled by Siguren motor controller MSRM4514. Working voltage of motor is 48VDC therefore is very important motor to be connected correct. Correct connection is shown on figure 8.
+.. danger::
+    C6 and C7 must be connected according specification! Wrong connection can cause motor damage!
+
+Connector C8 (figure 6, point 1) is MS recovery motor electrical connector. Recovery motor is DC motor controlled by Siguren motor controller MSRM4514. Working voltage of motor is 48VDC therefore is very important motor to be connected correct. Correct connection is shown on figure 8.
 
  
 Figure 8 MS recovery motor C8 terminal connection
@@ -142,7 +144,10 @@ T8	Recovery motor power supply
 T9	Heater
 	Figure 11 shows general view of connection between MS and control cabinet (MSCC). For more detail about connection, please review electrical circuit diagram for the corresponding project.
  Figure 11 General view of connection between MS and MSCC
+
 4	Indication lamps and controls
+---------------------------------
+
 	Indication lamps and local controls are shown on figure 3. They are located on front door of control cabinet. 
 	Indication lamps indicates:
 	- MS status – figure 3, items 2, 8;
