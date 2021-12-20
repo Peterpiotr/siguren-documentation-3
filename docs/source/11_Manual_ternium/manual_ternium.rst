@@ -3,12 +3,14 @@ MotoSuiveur Manual (from Ternium project)
 
 Introduction
 ----------------
-	Object of this manual is to present operation modes of MotoSuiveur® (further called MS). Manual describes electrical part of MS, MS operation modes, troubleshooting and maintenance. On figure 1 is presented MS main block diagram.
+
+The object of this manual is to present operation modes of MotoSuiveur® (further called MS). Manual describes electrical part of MS, MS operation modes, troubleshooting and maintenance. On figure 1 is presented MS main block diagram.
  
 Figure 1 MotoSuiveur® main block diagram
- 
-Glossary (to be replaced for Hydraulic)
-----------------
+
+
+Glossary
+---------
 
 №	Name	Description
 1	Recovery motor	Recovery power transmission train. To be used to safely lower (or shortly raise) the load in case of emergency.
@@ -89,6 +91,8 @@ c) Kollmorgen motor
  
 d) General view of MS motor
 Figure 7 Connectors C6 and C7
+
+.. warning::
 	ATTENTION
  	C6 and C7 must be connected according specification! Wrong connection can cause motor damage!
 
@@ -151,8 +155,11 @@ T9	Heater
 	Figure 12 shows schematically the control signals between hoist and MS. 
  
 Figure 12 Control signals between hoist and MS
+
+.. warning::
 	ATTENTION
  	Local control commands can be duplicated with remotes! Please, check electrical circuit diagram!
+
 4.1.1	Hoist enabled.
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -194,6 +201,8 @@ Upward enable/Downward enable
 1 – Screwing direction
 2 – Unscrewing direction
 Figure 14 MS Worm rotating directions
+
+.. warning::
 	ATTENTION
  	After MS reset or manual centering of the worm and MS restart, no movement is performed or faults appears, please contact SIGUREN technologies on address support@siguren.com
 
@@ -267,7 +276,7 @@ Figure 15 Self – test operation mode
 
 
 
-
+.. warning::
 	ATTENTION
  	In case of repetitive faults, please contact SIGUREN technologies on address support@siguren.com!
 
@@ -291,10 +300,13 @@ Figure 17 Steps of Switch test
  
 Figure 18 Play test steps
 
+.. warning::
 	ATTENTION
  	In case of repetitive faults, please contact SIGUREN Technologies on address support@siguren.com!
- 
+
 5.3	Following operation mode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 	Following operation mode starts after successful passed of self – test. The function of this operation mode is intended for follow movements of the hoist and to monitor for exceeding the rated speed (nominal speed) with defined positive tolerance. The speed, which is considered high is called Overspeed. By design MS will not allow Overspeed. Typically Overspeed is equal to:
 Overspeed = Nominal speed + 10%				(1)
 	Figure 19 is presents main principle of Following operation mode and overspeed detection. On figure 20 steps of following operation mode is presented. On figure 21 are shown symbols displayed on 7 – segment display during following operation mode.
@@ -336,7 +348,8 @@ Following	Downward movement following
 
 
 Figure 21 Symbols displayed on 7 – segment display on MS controller
- 
+
+
 5.4	Backup/Recovery operation mode
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -362,7 +375,7 @@ Figure 23 Principle of Backup/Recovery operation
 	Backup/Recovery control key is in position “0” (OFF);
 	On 7 – segment display symbols   or   are not displayed.
 	
-    
+
 6	Troubleshoot and maintenance
 ------------------------------
 
@@ -393,8 +406,10 @@ E09	Coil temperature: maximum temperature reached in the self. 	It is impossible
 E16	Resolver saturation: Sin / Cos resolver signals received too high.	Check resolver connection between motor and control cabinet and resolver connector.
 E17	24V auxiliary supply error. 	This fault is triggered if the 24V auxiliary power supply is noisy or has a voltage dip (<15V). Check the 24V supply.
 
- 
+
 6.1.2	MS faults and warnings
+++++++++++++++++++++++++++++++
+
 Message	Description	Possible cases
 E02	Screwing command during self-test *	Check for pressed/held down button for hoist lifting command. 
 E03	Unscrewing command during self-test *	Check for pressed/held down button for hoist lowering command
@@ -414,12 +429,15 @@ F23	Damping too hard	Damping nozzles too closed
 F33	Unscrewing Overspeed. Overspeed during lowering	Hoist speed exceeds maximum defined speed during lowering
 F34	Screwing Overspeed. Overspeed during lifting	Hoist speed exceeds maximum defined speed during lifting
 
+.. warning::
 	ATTENTION
  	In case of repetitive faults, please contact SIGUREN Technologies on address support@siguren.com!
 
- 
+
 6.2	MSHMI
-	The MSHMI is a Schneider Magelis HMI STU 655/855 color graphic touchscreen terminal programmed with the MSHMI firmware by Siguren technologies. MSHMI communicates with MS controller via MODBUS RTU protocol – figure 24.
+^^^^^^^^^
+
+The MSHMI is a Schneider Magelis HMI STU 655/855 color graphic touchscreen terminal programmed with the MSHMI firmware by Siguren technologies. MSHMI communicates with MS controller via MODBUS RTU protocol – figure 24.
  
 Figure 24 MSHMI
 	Advantages if using MSHMI to operating with MS® are:
@@ -428,8 +446,10 @@ Figure 24 MSHMI
 	- Change operating mode of MotoSuiveur®;
 	- Display maintenance information of MotoSuiveur®.
 
+.. note::
 	INFORMATION
  	MSHMI is not part from standard MS equipment and can be ordered additionally.
+
 6.3	Maintenance
 	Due to inherent dangers in the maintenance and testing of electrical equipment, special attention should be paid to safety, not only to the personnel working the immediate area but also to equipment under test, maintenance and repair.
 	All personnel operating in the relevant area should observe these procedures and pay due regard to safety Local Safety Rules and Regulations.
@@ -444,6 +464,7 @@ The user should ensure that maintenance setting up and authorized and competent 
 	4. Ensure that all persons working on the equipment are familiar with instructions and information provided in this manual.
 	5. Providing that the equipment is functioning correctly and all personnel responsible for operating it are complying with the conditions specified, the electrical equipment may be deemed to be “properly used” and should be safe and free from health hazards.
 	The reliability of the Motosuiveur® will depend if the maintenance procedure is strictly adhered to. Maintenance operations are to be done based either on the Maintenance type displayed on MS controller 7 – segment display or on a time basis wherever the smallest value applies.
+
 Maintenance Intervals: - A= Weekly, B= Monthly, C= 3 Monthly, D= 6 Monthly E= Annually, F= 2 Years, G=5 Years, H=10 Years
 Table 2 MS maintenance intervals
 MotoSuiveur® Unit	A	B	C	D	E	F	G	H	Worm Rotation Count (HMI)	Controller 7-Segment Display
@@ -469,7 +490,7 @@ References: 200x2; 53x4									900E6	D
 	Replace *		
 
 * Replace earlier if leaks are present and maintenance history is unknown
- 
+
 Table 3 Integrated recovery mechanism maintenance intervals
 Integrated Recovery system of MotoSuiveur® Unit	A	B	C	D	E	F	G	H	Worm Rotation Count (HMI)	Controller 7-Segment Display
 Fixation to MS Unit									75E6	 ;  ;  ;  
@@ -481,8 +502,10 @@ IR system engagement 									75E6	 ;  ;  ;
 	Test Engagement / Disengagement Function		
 
 * Replace earlier if leaks are present and maintenance history is unknown
- 
+
 7	Appendix 1: Signal Lamps
+----------------------------
+
  Table 1 Combination of active and inactive signal lams
 Signal lamp	Status	Correction
 Fault	Enabled	Healthy	Recovery mode	Recovery engaged		
