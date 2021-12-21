@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1. MotoSuiveur Manual &mdash; MotoSuiveur docs 0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to MotoSuiveur documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MotoSuiveur docs
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. MotoSuiveur Manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">1.1. Revision history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">1.2. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#glossary">1.3. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-ms-to-control-cabinet">1.4. Connect MS to control cabinet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#indication-lamps-and-controls">1.5. Indication lamps and controls</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hoist-enabled">1.5.1. Hoist enabled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fault">1.5.2. Fault</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#upward-enable-downward-enable">1.5.3. Upward enable/Downward enable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#backup-recovery-off-on-backup-recovery-down-up">1.5.4. Backup/Recovery Off/On; Backup/Recovery Down/Up</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enable-override">1.5.5. Enable Override</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lamp-states">1.5.6. Lamp states</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ms-operating-modes">1.6. MS operating modes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ms-controller-internal-check">1.6.1. MS controller internal check</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#self-test-operation-mode">1.6.2. Self-test operation mode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#electrical-test">1.6.2.1. Electrical test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switch-test">1.6.2.2. Switch test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#play-test">1.6.2.3. Play test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#following-operation-mode">1.6.3. Following operation mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#backup-recovery-operation-mode">1.6.4. Backup/Recovery operation mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshoot-and-maintenance">1.7. Troubleshoot and maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting-via-ms-controller-7-segment-display">1.7.1. Troubleshooting via MS controller 7 - segment display</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ms-controller-internal-errors">1.7.1.1. MS controller internal errors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ms-faults-and-warnings">1.7.1.2. MS faults and warnings</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mshmi">1.7.2. MSHMI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#maintenance">1.7.3. 6.3     Maintenance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#appendix-1-signal-lamps">1.8. Appendix 1: Signal Lamps</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MotoSuiveur docs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">1. </span>MotoSuiveur Manual</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/01_motosuiveur_manual/motosuiveur_manual.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="motosuiveur-manual">
+<h1><span class="section-number">1. </span>MotoSuiveur Manual<a class="headerlink" href="#motosuiveur-manual" title="Permalink to this headline"></a></h1>
+<section id="revision-history">
+<h2><span class="section-number">1.1. </span>Revision history<a class="headerlink" href="#revision-history" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default" id="id13">
+<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">test table 2</span><a class="headerlink" href="#id13" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Revision</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Revision date</p></th>
+<th class="head"><p>Author</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>Initial version</p></td>
+<td><p>16.04.2020</p></td>
+<td><p>DG</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>Add information in all sections, “Operations state” is replaced with “Operation mode”. „Electrical and automation” is replaced with “Manual”, add figures.</p></td>
+<td><p>06.08.2020</p></td>
+<td><p>DG</p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>Information added about spare parts and lubricants</p></td>
+<td><p>10.09.2020</p></td>
+<td><p>DG</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="introduction">
+<h2><span class="section-number">1.2. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p>The object of this manual is to present operation modes of MotoSuiveur® (further called MS). Manual describes electrical part of MS, MS operation modes, troubleshooting and maintenance. On <a class="reference internal" href="#motosuiveur-main-block-diagram"><span class="std std-numref">Fig. 1.1</span></a> is presented MS main block diagram.</p>
+<figure class="align-center" id="id14">
+<span id="motosuiveur-main-block-diagram"></span><a class="reference internal image-reference" href="../_images/ms_main_block_diagram.png"><img alt="../_images/ms_main_block_diagram.png" src="../_images/ms_main_block_diagram.png" style="width: 578.25px; height: 448.5px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">MotoSuiveur® main block diagram</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="glossary">
+<h2><span class="section-number">1.3. </span>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline"></a></h2>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="../_images/glossaryImage.png"><img alt="../_images/glossaryImage.png" src="../_images/glossaryImage.png" style="width: 450.75px; height: 405.75px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">MS unit components</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id16" style="width: 11">
+<caption><span class="caption-number">Table 1.2 </span><span class="caption-text">MS unit components</span><a class="headerlink" href="#id16" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 45%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Recovery motor</p></td>
+<td><p>Recovery power transmission train. To be used to safely lower (or shortly raise) the load in case of emergency.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Recovery transmission</p></td>
+<td><p>test</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Recovery engaged switch (RS)</p></td>
+<td><p>Recovery transmission train engaged</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Unscrewing enable switch (USCRE)</p></td>
+<td><p>Stops and prevent further hoist movement in this direction</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Screwing enable switch (SCRE)</p></td>
+<td><p>test</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Worm switch cam</p></td>
+<td><p>Acts on SCRE and USCRE</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Recovery engagement nut with switch cam</p></td>
+<td><p>Engages the recovery transmission to the worm and acts on RS</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>MS motor</p></td>
+<td><p>Allows normal operation following</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Friction worm wheel</p></td>
+<td><p>Acts as brake if the external toothed ring is stopped by the worm</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Worm</p></td>
+<td><p>test</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="../_images/glossaryImage2.png"><img alt="../_images/glossaryImage2.png" src="../_images/glossaryImage2.png" style="width: 451.5px; height: 347.25px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.3 </span><span class="caption-text">General view of MS control cabinet front door</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id18" style="width: 100">
+<caption><span class="caption-number">Table 1.3 </span><span class="caption-text">MS control cabinet front door</span><a class="headerlink" href="#id18" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 63%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Hoist enabled lamp</p></td>
+<td><p>MS authorizes hoist movements</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Fault lamp</p></td>
+<td><p>MS is in fault</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Upward enabled lamp</p></td>
+<td><p>MS authorizes hoist for upward movement</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Backup/Recovery off/on selector key</p></td>
+<td><p>Off - normal movement</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>ON – Backup mode</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>ON + Reset – Recovery mode</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Backup/Recovery down/up key</p></td>
+<td><p>Up/Down command for Recovery mode</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Enable override selector key</p></td>
+<td><p>Allow hoist movement when (1) is off</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Reset button</p></td>
+<td><p>MS reset</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Healthy lamp</p></td>
+<td><p>MS controller and MS motor healthy</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Downward enable lamp</p></td>
+<td><p>MS authorizes hoist for downward movement</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Recovery mode lamp</p></td>
+<td><p>Active Backup/Recovery mode</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>Recovery engaged lamp</p></td>
+<td><p>Recovery is engaged</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="../_images/generalViewOperationModes.png"><img alt="../_images/generalViewOperationModes.png" src="../_images/generalViewOperationModes.png" style="width: 285.0px; height: 651.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.4 </span><span class="caption-text">General view of the sequence of MS operation modes</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Mechanical characteristics of MS are presented on the nameplate of the MS. The nameplate of the MS indicates the maximum rotating speed, the corresponding braking torque and other characteristics (mass, oil quantity, etc.). Example is shown on figure 5.</p>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="../_images/MSnameplate.png"><img alt="../_images/MSnameplate.png" src="../_images/MSnameplate.png" style="width: 201.75px; height: 318.75px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.5 </span><span class="caption-text">MS nameplate</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="connect-ms-to-control-cabinet">
+<h2><span class="section-number">1.4. </span>Connect MS to control cabinet<a class="headerlink" href="#connect-ms-to-control-cabinet" title="Permalink to this headline"></a></h2>
+<p>After mechanical assembly of MS to hoist is done, electrical connection must be made between MS and control cabinet. Figure 7 shows general view of typical MS unit electrical components that should be connected according specific for the project electrical circuit diagram.</p>
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="../_images/electricalConnections.png"><img alt="../_images/electricalConnections.png" src="../_images/electricalConnections.png" style="width: 451.5px; height: 347.25px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.6 </span><span class="caption-text">Electrical connections of MS unit</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>№       Description     №       Description
+1       C8 - Recovery motor connector   3       C6 - Power connector
+2       TSW - Position switches terminal        4       C7 - Resolver connector</p>
+<p>Connectors C6 and C7 (figure 6 points 3 and 4) should be made according following specification:
+For C7 connector screened cable with 4 twisted pairs, 0.25 mm² should be used. Ground the shield of the feedback should be connected to GND - figure 7 a);</p>
+<p>For C6 connector should be used screened cable, 4 core, 1.5 mm². Ground the shield of the feedback should be connected to GND - Figure 7 b).</p>
+<blockquote>
+<div><p>Figure 7 c) shows signal arrangement of connector on motor side for motor type Kollmorgen.
+Figure 7 d) shows general MS motor view.</p>
+</div></blockquote>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="../_images/C7connector.png"><img alt="../_images/C7connector.png" src="../_images/C7connector.png" style="width: 414.0px; height: 141.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.7 </span><span class="caption-text">C7 connector</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="loweralpha simple">
+<li><p>C7 connector</p></li>
+</ol>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="../_images/C6connector.png"><img alt="../_images/C6connector.png" src="../_images/C6connector.png" style="width: 371.25px; height: 113.25px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.8 </span><span class="caption-text">C6 connector</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="loweralpha simple" start="2">
+<li><p>C6 connector</p></li>
+</ol>
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="../_images/connectorDrawing.png"><img alt="../_images/connectorDrawing.png" src="../_images/connectorDrawing.png" style="width: 107.0px; height: 104.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.9 </span><span class="caption-text">Kollmorgen motor (1)</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id25" style="width: 100">
+<caption><span class="caption-number">Table 1.4 </span><span class="caption-text">Kollmorgen motor (1)</span><a class="headerlink" href="#id25" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 45%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>NC</p></td>
+<td><p>Not connected</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>TEMP-</p></td>
+<td><p>Motor temperature sensor Lo</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>COS-</p></td>
+<td><p>Cosine Lo</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>SIN-</p></td>
+<td><p>Sine Lo</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>REF-</p></td>
+<td><p>Reference Lo</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>TEMP+</p></td>
+<td><p>Motor temperature sensor Hi</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>COS+</p></td>
+<td><p>Cosine Hi</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>SIN+</p></td>
+<td><p>Sine Hi</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>REF+</p></td>
+<td><p>Reference Hi</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>NC</p></td>
+<td><p>Not connected</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>NC</p></td>
+<td><p>Not connected</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="../_images/connectorDrawing2.png"><img alt="../_images/connectorDrawing2.png" src="../_images/connectorDrawing2.png" style="width: 108.0px; height: 110.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.10 </span><span class="caption-text">Kollmorgen motor (2)</span><a class="headerlink" href="#id26" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id27" style="width: 100">
+<caption><span class="caption-number">Table 1.5 </span><span class="caption-text">Kollmorgen motor (2)</span><a class="headerlink" href="#id27" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 45%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>V</p></td>
+<td><p>Motor phase V</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>PE</p></td>
+<td><p>Motor earth</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>W</p></td>
+<td><p>Motor phase W</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>U</p></td>
+<td><p>Motor phase U</p></td>
+</tr>
+<tr class="row-even"><td><p>A, B, C, D</p></td>
+<td><p>NC</p></td>
+<td><p>Not connected</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="loweralpha simple" start="3">
+<li><p>Kollmorgen motor</p></li>
+</ol>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="../_images/generalViewMSmotor.jpg"><img alt="../_images/generalViewMSmotor.jpg" src="../_images/generalViewMSmotor.jpg" style="width: 627.6px; height: 328.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.11 </span><span class="caption-text">Connectors C6 and C7</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="loweralpha simple" start="4">
+<li><p>General view of MS motor</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>ATTENTION
+C6 and C7 must be connected according specification! Wrong connection can cause motor damage!</p>
+</div>
+<p>On <a class="reference internal" href="#ms-recovery-motor-c8-terminal-connection"><span class="std std-numref">Fig. 1.12</span></a> is MS recovery motor electrical connector. Recovery motor is DC motor controlled by Siguren motor controller MSRM4514. Working voltage of motor is 48VDC therefore is very important motor to be connected correctly. Correct connection is shown on figure 8.</p>
+<figure class="align-center" id="id29">
+<span id="ms-recovery-motor-c8-terminal-connection"></span><a class="reference internal image-reference" href="../_images/MSrecoveryMotorTerminal.jpg"><img alt="../_images/MSrecoveryMotorTerminal.jpg" src="../_images/MSrecoveryMotorTerminal.jpg" style="width: 676.8px; height: 399.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.12 </span><span class="caption-text">MS recovery motor C8 terminal connection</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Position switches are used for allowing or prohibiting hoist movement. Position switches are using in active output signal via NC contact. Signal from switches should be active in case when switches are not in contact with worm and worm is in correct position. Figure 9 a) combination of signals form position switches is shown. Position switches are shown on figure 9 b).</p>
+<figure class="align-center" id="id30">
+<img alt="../_images/combinationSignalsPositionSwitches.png" src="../_images/combinationSignalsPositionSwitches.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.13 </span><span class="caption-text">Combination of signals from position switches</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id31">
+<a class="reference internal image-reference" href="../_images/positionSwitches.png"><img alt="../_images/positionSwitches.png" src="../_images/positionSwitches.png" style="width: 524.0px; height: 308.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.14 </span><span class="caption-text">position switches</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Terminal block TSW (Terminal SWitches) is used for connection of worm position proxy sensors/switches and control cabinet. Figure 10 shows general view of TSW and description of terminals.</p>
+<figure class="align-center" id="id32">
+<a class="reference internal image-reference" href="../_images/terminalBlock.png"><img alt="../_images/terminalBlock.png" src="../_images/terminalBlock.png" style="width: 360.0px; height: 176.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.15 </span><span class="caption-text">Terminal block TSW</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id33" style="width: 100">
+<caption><span class="caption-number">Table 1.6 </span><span class="caption-text">Terminal block TSW</span><a class="headerlink" href="#id33" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>+24VDC. Supply USCRE position switch</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Signal from USCRE position switch</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>+24VDC. Supply SCRE position switch</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Signal from SCRE position switch</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>+24VDC. Supply Recovery position switch</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Signal from position switch</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default" id="id34" style="width: 100">
+<caption><span class="caption-number">Table 1.7 </span><span class="caption-text">Terminal block TSW</span><a class="headerlink" href="#id34" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>+24VDC. Supply USCRE position switch</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Signal from USCRE position switch</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>+24VDC. Supply SCRE position switch</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Signal from SCRE position switch</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>+24VDC. Supply Recovery position switch</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Signal from position switch</p></td>
+</tr>
+</tbody>
+</table>
+<p>Terminal blocks in control cabinet are for connection between MS and control cabinet. Terminal blocks are described in <a class="reference internal" href="#control-cabinet-terminals"><span class="std std-numref">Table 1.8</span></a>.</p>
+<span id="control-cabinet-terminals"></span><table class="colwidths-given docutils align-default" id="id35" style="width: 100">
+<caption><span class="caption-number">Table 1.8 </span><span class="caption-text">Control cabinet terminals</span><a class="headerlink" href="#id35" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Terminal block</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T1</p></td>
+<td><p>Power supply</p></td>
+</tr>
+<tr class="row-odd"><td><p>T2</p></td>
+<td><p>Digital inputs</p></td>
+</tr>
+<tr class="row-even"><td><p>T3</p></td>
+<td><p>MS sensors/switches</p></td>
+</tr>
+<tr class="row-odd"><td><p>T4</p></td>
+<td><p>Digital outputs</p></td>
+</tr>
+<tr class="row-even"><td><p>T5</p></td>
+<td><p>Analogue I/O</p></td>
+</tr>
+<tr class="row-odd"><td><p>T6</p></td>
+<td><p>MS motor power supply</p></td>
+</tr>
+<tr class="row-even"><td><p>T7</p></td>
+<td><p>MS motor resolver</p></td>
+</tr>
+<tr class="row-odd"><td><p>T8</p></td>
+<td><p>Recovery motor power supply</p></td>
+</tr>
+<tr class="row-even"><td><p>T9</p></td>
+<td><p>Heater</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#general-view-of-connection-between-ms-and-mscc"><span class="std std-numref">Fig. 1.16</span></a> shows general view of connection between MS and control cabinet (MSCC). For more detail about connection, please review electrical circuit diagram for the corresponding project.</p>
+<figure class="align-center" id="id36">
+<span id="general-view-of-connection-between-ms-and-mscc"></span><a class="reference internal image-reference" href="../_images/generalViewConnectionsMS-MSCC.png"><img alt="../_images/generalViewConnectionsMS-MSCC.png" src="../_images/generalViewConnectionsMS-MSCC.png" style="width: 481.6px; height: 373.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.16 </span><span class="caption-text">General view of connection between MS and MSCC</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="indication-lamps-and-controls">
+<h2><span class="section-number">1.5. </span>Indication lamps and controls<a class="headerlink" href="#indication-lamps-and-controls" title="Permalink to this headline"></a></h2>
+<p>Indication lamps and local controls are shown on figure 3. They are located on front door of control cabinet.
+Indication lamps indicates:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>MS status - figure 3, items 2, 8;</p></li>
+<li><p>allowed movement direction of hoist - figure 3, items 1, 3, 9;</p></li>
+<li><p>recovery mode status - figure 3, items 10, 11.</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>Local controls are used for:</dt><dd><ul class="simple">
+<li><p>reset of MS - figure 3, item 7;</p></li>
+<li><p>overrides MS enable signal (override ON signal) - figure 3, item 6;</p></li>
+<li><p>enable and control MS Backup/ Recovery mode - figure 3 items 4, 5, 10, 11.</p></li>
+</ul>
+</dd>
+</dl>
+<p><a class="reference internal" href="#control-signals-between-hoist-and-ms"><span class="std std-numref">Fig. 1.17</span></a> shows schematically the control signals between hoist and MS.</p>
+<figure class="align-center" id="id37">
+<span id="control-signals-between-hoist-and-ms"></span><a class="reference internal image-reference" href="../_images/controlSignals.png"><img alt="../_images/controlSignals.png" src="../_images/controlSignals.png" style="width: 340.0px; height: 364.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.17 </span><span class="caption-text">Control signals between hoist and MS</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Local control commands can be duplicated with remotes!
+Please, check electrical circuit diagram!</p>
+</div>
+<section id="hoist-enabled">
+<h3><span class="section-number">1.5.1. </span>Hoist enabled<a class="headerlink" href="#hoist-enabled" title="Permalink to this headline"></a></h3>
+<p>Hoist enabled lamp indicate that the MS authorizes hoist movements. (figure 5). Hoist enabled signal will on only in case if ON signal from hoist is ON.</p>
+<p>Hoist enabled signal will be ON when MS self-test pass successfully and ON signal is available then Hoist enabled and Healthy indicator lamps are on. The signals are indicating system ready (MS ready).</p>
+</section>
+<section id="fault">
+<h3><span class="section-number">1.5.2. </span>Fault<a class="headerlink" href="#fault" title="Permalink to this headline"></a></h3>
+<dl class="simple">
+<dt>Fault lamp (figure 3, item 2) indicates three different types of faults:</dt><dd><ul class="simple">
+<li><p>MS controller internal errors, described in section 7.1;</p></li>
+<li><p>MS faults (further called flt_num), described in section 7.2;</p></li>
+<li><p>MS warnings (further called wrn_num), described in section 7.2;</p></li>
+</ul>
+</dd>
+</dl>
+<p>MS controller internal errors are related to MS controller internal hardware, firmware, and MS motor. This type of errors are with highest priority. If MS controller internal fault appear further operation is prohibited.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Fault lamp indicator is on during MS self-test.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The system displays only last MS warning (wrn_num) or MS fault (flt_nim) occurred.</p>
+</div>
+<p>Faults and warnings are displayed on MS 7 - segment controller. The display indicates
+all types of MS warnings/faults and MS controller internal errors.
+Indication is a combination of letters and numbers. MS controller internal
+faults are indicated with blinked combination of <img alt="image035" src="../_images/image035.png" />, number and finish
+with symbol <img alt="image039" src="../_images/image039.png" />.</p>
+<p>MS faults are displayed with combination of <img alt="image036" src="../_images/image036.png" /> and number.
+MS warnings are displayed with combination of <img alt="image035" src="../_images/image035.png" /> and number.</p>
+<p class="rubric">Displaying messages on MS controller 7 - segment display</p>
+<p>On <a class="reference internal" href="#ms-controller-internal-error-e01"><span class="std std-numref">Fig. 1.18</span></a> is shown example for internal MS controller fault.
+On <a class="reference internal" href="#ms-warning-number-10-wrn-num-10"><span class="std std-numref">Fig. 1.19</span></a> is shown example for MS warning.</p>
+<figure class="align-center" id="id38">
+<span id="ms-controller-internal-error-e01"></span><a class="reference internal image-reference" href="../_images/MScontrollerInternalErrorE01.png"><img alt="../_images/MScontrollerInternalErrorE01.png" src="../_images/MScontrollerInternalErrorE01.png" style="width: 479.0px; height: 61.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.18 </span><span class="caption-text">MS controller internal error E01</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id39">
+<span id="ms-warning-number-10-wrn-num-10"></span><a class="reference internal image-reference" href="../_images/MSwarningNumber10.png"><img alt="../_images/MSwarningNumber10.png" src="../_images/MSwarningNumber10.png" style="width: 278.0px; height: 62.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.19 </span><span class="caption-text">MS warning number 10 (wrn_num = 10)</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After MS reset, all types of faults are cleared. Before MS reset, fault should be resolved.</p>
+</div>
+</section>
+<section id="upward-enable-downward-enable">
+<h3><span class="section-number">1.5.3. </span>Upward enable/Downward enable<a class="headerlink" href="#upward-enable-downward-enable" title="Permalink to this headline"></a></h3>
+<p>Upward enable/Downward enable are indicators for authorized direction of hoist movement.
+If one of the two directions is forbidden to move, it is necessary to move the hoist
+in the opposite direction in order to reset the system mechanically.</p>
+<p>Movements upward and downward of hoist are correspond to screwing and unscrewing
+movement of MS worm. Movement directions of worm are corresponding to directions
+of clock. Direction screwing is clockwise, unscrewing direction is anticlockwise,
+viewed from cam part of the screw shaft as is shown
+on <a class="reference internal" href="#ms-worm-rotating-directions"><span class="std std-numref">Fig. 1.20</span></a>.</p>
+<figure class="align-center" id="id40">
+<span id="ms-worm-rotating-directions"></span><a class="reference internal image-reference" href="../_images/MSwormRotatingDirections.png"><img alt="../_images/MSwormRotatingDirections.png" src="../_images/MSwormRotatingDirections.png" style="width: 356.0px; height: 284.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.20 </span><span class="caption-text">MS Worm rotating directions</span><a class="headerlink" href="#id40" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">1 - Screwing direction</div>
+<div class="line">2 - Unscrewing direction</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>After MS reset or manual centering of the worm and MS restart,
+no movement is performed or faults appears, please contact SIGUREN
+technologies on address <a class="reference external" href="mailto:support&#37;&#52;&#48;siguren&#46;com">support<span>&#64;</span>siguren<span>&#46;</span>com</a></p>
+</div>
+</section>
+<section id="backup-recovery-off-on-backup-recovery-down-up">
+<h3><span class="section-number">1.5.4. </span>Backup/Recovery Off/On; Backup/Recovery Down/Up<a class="headerlink" href="#backup-recovery-off-on-backup-recovery-down-up" title="Permalink to this headline"></a></h3>
+<p>Backup function allows the load to be lowered down, by using minimal functionalities
+when MS is in Following operation mode. Backup function ignore all settings related
+with nominal following operation mode and allows movement of the hoist with limited speed.</p>
+<p>Recovery function is used when the main hoisting chain is faulty (for example damaged
+brake of the hoist motor). Recovery system allows lowering load safety to the ground.</p>
+</section>
+<section id="enable-override">
+<h3><span class="section-number">1.5.5. </span>Enable Override<a class="headerlink" href="#enable-override" title="Permalink to this headline"></a></h3>
+<p>Enable override can be used if it is necessary to override Hoist enabled. This allows
+small movements for MS mechanically reset.</p>
+</section>
+<section id="lamp-states">
+<h3><span class="section-number">1.5.6. </span>Lamp states<a class="headerlink" href="#lamp-states" title="Permalink to this headline"></a></h3>
+<p>Combination of active (ON) and inactive (OFF) signal lams gives current status of MS.
+In Appendix Table 1 signal combinations are presented and described.</p>
+</section>
+</section>
+<section id="ms-operating-modes">
+<h2><span class="section-number">1.6. </span>MS operating modes<a class="headerlink" href="#ms-operating-modes" title="Permalink to this headline"></a></h2>
+<section id="ms-controller-internal-check">
+<h3><span class="section-number">1.6.1. </span>MS controller internal check<a class="headerlink" href="#ms-controller-internal-check" title="Permalink to this headline"></a></h3>
+<p>At power on (or restart) MS starts operating according figure 3. According sequence of
+MS operation modes first operation is MS controller internal check. Internal check is
+intended to hardware, firmware of MS controller, MS motor and MS motor resolver.</p>
+<p>In case of fault, fault is visualized on 7 - segment display as described in 5.1.2.
+Further operations are prohibited. List with MS controller internal faults are listed
+in section 7.1.</p>
+</section>
+<section id="self-test-operation-mode">
+<h3><span class="section-number">1.6.2. </span>Self-test operation mode<a class="headerlink" href="#self-test-operation-mode" title="Permalink to this headline"></a></h3>
+<p>After MS controller internal check finishes, Self-test operation mode (further called self - test) starts. On figure 15 a) symbols indicated self-test steps on MS controller 7 - segment display are shown. On figure 15 b) is shown sequence of self-test steps.</p>
+<span id="self-test-steps-symbols"></span><table class="docutils align-default" id="id41" style="width: 100">
+<caption><span class="caption-number">Table 1.9 </span><span class="caption-text">Self-test steps symbols</span><a class="headerlink" href="#id41" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbol</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Symbol</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="image001" src="../_images/image001.png" /></p></td>
+<td><p>Homing</p></td>
+<td><p><img alt="image003" src="../_images/image003.png" /></p></td>
+<td><p>Un-screwing enable switch not made</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image039" src="../_images/image039.png" /></p></td>
+<td><p>Waiting piston return</p></td>
+<td><p><img alt="image007" src="../_images/image007.png" /></p></td>
+<td><p>Screwing enable switch not made</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image009" src="../_images/image009.png" /></p></td>
+<td><p>Blocked</p></td>
+<td><p><img alt="image011" src="../_images/image011.png" /></p></td>
+<td><p>Screwing enable switch not centered</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image013" src="../_images/image013.png" /></p></td>
+<td><p>Checking MS firmware (Soft)</p></td>
+<td><p><img alt="image015" src="../_images/image015.png" /></p></td>
+<td><p>Un-screwing enable switch not centered</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image017" src="../_images/image017.png" /></p></td>
+<td><p>Electrical test</p></td>
+<td><p><img alt="image009" src="../_images/image009.png" /></p></td>
+<td><p>Damping plus*</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image021" src="../_images/image021.png" /></p></td>
+<td><p>Switch test</p></td>
+<td><p><img alt="image023" src="../_images/image023.png" /></p></td>
+<td><p>Damping minus*</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image025" src="../_images/image025.png" /></p></td>
+<td><p>Damping*</p></td>
+<td><p><img alt="image027" src="../_images/image027.png" /></p></td>
+<td><p>Play minus</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image029" src="../_images/image029.png" /></p></td>
+<td><p>Air*</p></td>
+<td><p><img alt="image031" src="../_images/image031.png" /></p></td>
+<td><p>Play plus</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image033" src="../_images/image033.png" /></p></td>
+<td><p>Play</p></td>
+<td><p><img alt="image035" src="../_images/image035.png" />/<img alt="image036" src="../_images/image036.png" /></p></td>
+<td><p>Error / Fault</p></td>
+</tr>
+</tbody>
+</table>
+<p>“*” steps are applicable only for hydraulic MS.</p>
+<figure class="align-center" id="id42">
+<span id="sequence-of-self-test-steps"></span><a class="reference internal image-reference" href="../_images/SequenceSelfTestSteps.png"><img alt="../_images/SequenceSelfTestSteps.png" src="../_images/SequenceSelfTestSteps.png" style="width: 311.20000000000005px; height: 536.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.21 </span><span class="caption-text">Sequence of self-test steps</span><a class="headerlink" href="#id42" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Fields with <em>, *</em> and <a href="#id1"><span class="problematic" id="id2">**</span></a>* are related with Table 2 in section 7.2</p>
+<section id="electrical-test">
+<h4><span class="section-number">1.6.2.1. </span>Electrical test<a class="headerlink" href="#electrical-test" title="Permalink to this headline"></a></h4>
+<p>On <a class="reference internal" href="#steps-of-electrical-test"><span class="std std-numref">Fig. 1.22</span></a>  test are shown. Test checks for active signals on
+inputs of the MS controller before self-test begin.</p>
+<figure class="align-center" id="id43">
+<span id="steps-of-electrical-test"></span><a class="reference internal image-reference" href="../_images/stepsElectricalTest.png"><img alt="../_images/stepsElectricalTest.png" src="../_images/stepsElectricalTest.png" style="width: 201.60000000000002px; height: 488.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.22 </span><span class="caption-text">Steps of Electrical test</span><a class="headerlink" href="#id43" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In case of repetitive faults, please contact SIGUREN technologies on address <a class="reference external" href="mailto:support&#37;&#52;&#48;siguren&#46;com">support<span>&#64;</span>siguren<span>&#46;</span>com</a>!</p>
+</div>
+</section>
+<section id="switch-test">
+<h4><span class="section-number">1.6.2.2. </span>Switch test<a class="headerlink" href="#switch-test" title="Permalink to this headline"></a></h4>
+<p>Switch test check connection between MS controller and SCRE/USCRE switches
+(figure 2, items 4, 5), centered position and functionality of switches.
+On figure 8 are shown steps of Switch test.</p>
+<p>In Table 2 located in appendix are shown steps for visual check of Switch test.
+Visual check of Switch test is necessary only in case if repetitive faults during
+the test appears.</p>
+<figure class="align-center" id="id44">
+<span id="steps-of-switch-test"></span><a class="reference internal image-reference" href="../_images/stepsSwitchTest.png"><img alt="../_images/stepsSwitchTest.png" src="../_images/stepsSwitchTest.png" style="width: 430.40000000000003px; height: 444.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.23 </span><span class="caption-text">Steps of Switch test</span><a class="headerlink" href="#id44" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In case of repeatedly wrn_num occurs, please check:</p>
+<ul class="simple">
+<li><p>connection between MS control cabinet and SCRE/USCRE switches;</p></li>
+<li><p>functionality of SCRE and USCRE switches;</p></li>
+<li><p>signals on inputs of MS controller and operational relays RSESw and RUESw located in MS control cabinet;</p></li>
+</ul>
+</div>
+</section>
+<section id="play-test">
+<h4><span class="section-number">1.6.2.3. </span>Play test<a class="headerlink" href="#play-test" title="Permalink to this headline"></a></h4>
+<p>Play test measures play between worm and worm wheel. On <a class="reference internal" href="#play-test-steps"><span class="std std-numref">Fig. 1.24</span></a> steps of Play
+test are shown.</p>
+<figure class="align-center" id="id45">
+<span id="play-test-steps"></span><a class="reference internal image-reference" href="../_images/playTestSteps.png"><img alt="../_images/playTestSteps.png" src="../_images/playTestSteps.png" style="width: 448.8px; height: 490.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.24 </span><span class="caption-text">Play test steps</span><a class="headerlink" href="#id45" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In case of repetitive faults, please contact SIGUREN Technologies on address <a class="reference external" href="mailto:support&#37;&#52;&#48;siguren&#46;com">support<span>&#64;</span>siguren<span>&#46;</span>com</a>!</p>
+</div>
+</section>
+</section>
+<section id="following-operation-mode">
+<h3><span class="section-number">1.6.3. </span>Following operation mode<a class="headerlink" href="#following-operation-mode" title="Permalink to this headline"></a></h3>
+<p>Following operation mode starts after successful passed of self - test. The function of this operation mode is intended for follow movements of the hoist and to monitor for exceeding the rated speed (nominal speed) with defined positive tolerance. The speed, which is considered high is called Overspeed. By design MS will not allow Overspeed. Typically Overspeed is equal to:
+Overspeed = Nominal speed + 10%                         (1)</p>
+<p><a class="reference internal" href="#main-principle-of-following"><span class="std std-numref">Fig. 1.25</span></a> presents main principle of Following operation mode and overspeed detection.
+On <a class="reference internal" href="#principle-of-following-operation-mode"><span class="std std-numref">Fig. 1.26</span></a> steps of following operation mode is
+presented. On <a class="reference internal" href="#symbols-displayed-on-7-segment-display-on-ms-controller"><span class="std std-numref">Fig. 1.27</span></a> are shown symbols displayed on 7 - segment display during
+following operation mode.</p>
+<figure class="align-center" id="id46">
+<span id="main-principle-of-following"></span><a class="reference internal image-reference" href="../_images/mainprinciplefollowing.png"><img alt="../_images/mainprinciplefollowing.png" src="../_images/mainprinciplefollowing.png" style="width: 467.0px; height: 511.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.25 </span><span class="caption-text">Main principle of following operation mode and overspeed detection</span><a class="headerlink" href="#id46" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">1 - Acceleration</div>
+<div class="line">2 - Following</div>
+<div class="line">3 - Deceleration</div>
+<div class="line">4 - Exceeding nominal speed</div>
+<div class="line">5 - Overspeed detection</div>
+<div class="line">6 - Overspeed detected. MS is braking</div>
+</div>
+<figure class="align-center" id="id47">
+<span id="principle-of-following-operation-mode"></span><a class="reference internal image-reference" href="../_images/principleFollowingMode.png"><img alt="../_images/principleFollowingMode.png" src="../_images/principleFollowingMode.png" style="width: 402.0px; height: 879.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.26 </span><span class="caption-text">Principle of Following operation mode</span><a class="headerlink" href="#id47" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id48">
+<span id="symbols-displayed-on-7-segment-display-on-ms-controller"></span><a class="reference internal image-reference" href="../_images/symbolsDisplayed.png"><img alt="../_images/symbolsDisplayed.png" src="../_images/symbolsDisplayed.png" style="width: 667.0px; height: 559.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.27 </span><span class="caption-text">Symbols displayed on 7-segment display on MS controller</span><a class="headerlink" href="#id48" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="backup-recovery-operation-mode">
+<h3><span class="section-number">1.6.4. </span>Backup/Recovery operation mode<a class="headerlink" href="#backup-recovery-operation-mode" title="Permalink to this headline"></a></h3>
+<p>Backup/Recovery operation mode functions are intended to unusual situations during MS
+operating. Controls and indicators of this functions are located on control panel front
+door - figure 3, items 4, 5, 10, 11.</p>
+<p>On figure 23 is shown principle of Backup/Recovery operation mode. Backup/Recovery
+decision figures located in figures 15 and 20 with dotted outline, represent the
+places where request for these operation modes are checked.</p>
+<p>Switching on Recovery/Backup mode is performed through Backup/Recovery OFF/ON key -
+figure 2, item 4. After switching Backup/Recovery mode on, Backup mode start operating.
+On 7 - segment display indication for backup mode is displayed   and Recovery mode lamp
+is on. Backup function ignore all settings related with following operation and allows
+movement of hoist with hoist limited speed.</p>
+<p>In Backup operating mode, control is performed trough commands for lifting and lowering
+of the hoist. In case of hoist control chain is damaged, control can be performed manually
+directly on control terminals located in MS control cabinet via wire bridge. Example is
+shown on figure 22. In Backup mode no ON signal is required to perform movement of MS.</p>
+<figure class="align-center" id="id49">
+<span id="example-for-manual-operation-in-backup-mode"></span><a class="reference internal image-reference" href="../_images/exampleManualOperationBackup.png"><img alt="../_images/exampleManualOperationBackup.png" src="../_images/exampleManualOperationBackup.png" style="width: 277.0px; height: 332.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.28 </span><span class="caption-text">Example for manual operation in backup mode</span><a class="headerlink" href="#id49" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id50">
+<span id="principle-of-backup-recovery-operation"></span><a class="reference internal image-reference" href="../_images/principleBackupRecoveryOperation.png"><img alt="../_images/principleBackupRecoveryOperation.png" src="../_images/principleBackupRecoveryOperation.png" style="width: 478.0px; height: 714.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.29 </span><span class="caption-text">Principle of Backup/Recovery operation</span><a class="headerlink" href="#id50" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Recovery mode is second part of Backup/Recovery operation. This mode start operates
+the way is shown on figure 23.</p>
+<p>After reset, MS checks for active Backup/Recovery mode
+request (Backup/Recovery operational key is ON). If request is active 7 - segment display
+shows symbol for Recovery mode <img alt="image041" src="../_images/image041.png" /> and engagement start. Engagement function is used to
+engage recovery mechanism to the worm via recovery nut - figure 1, item 7.</p>
+<p>Completion of engagement is indicated by Recovery engaged indication lamp (figure 3,
+point 10). If lamp is off after first engagement, reset is needed. Reset will activate
+engagement again.</p>
+<p>Controlling of Recovery is with 3 - position key Backup/Recovery Down/Up located on front
+door of control cabinet - figure 3 item 5. Also Recovery can be controller remotely if
+that is provided by electrical circuit diagram.</p>
+<p>After engagement is complete and Recovery engagement lamp is on, brake of main hoist
+motor should be released. Otherwise motor brake will prohibit movements. Brake should
+remain open until recovery operation done.</p>
+<p>For disengagement, load should be on safe place, main hoist motor brake should be
+closed. Command for lowering should be given to MS until both lamps for Upward enable
+and Downward enable becomes on.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<dl class="simple">
+<dt>Recovery function is mainly designed for safety lowering of the load. Function</dt><dd><p>allows very short lifting of the load only in case if it is absolutely necessary!</p>
+</dd>
+</dl>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before activating Backup/Recovery operation mode from local controls
+(figure 3, item 4), please make sure that operation mode is not activated
+remotely. The verification consists of the following steps:</p>
+<ul class="simple">
+<li><p>Recovery mode lamp and Recovery engaged lamp are off;</p></li>
+<li><p>Backup/Recovery control key is in position “0” (OFF);</p></li>
+<li><p>On 7 - segment display symbols   or   are not displayed.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="troubleshoot-and-maintenance">
+<h2><span class="section-number">1.7. </span>Troubleshoot and maintenance<a class="headerlink" href="#troubleshoot-and-maintenance" title="Permalink to this headline"></a></h2>
+<p>Troubleshooting of MS can be done by few ways:</p>
+<ul class="simple">
+<li><p>via signal lamps located on front door - Appendix 1;</p></li>
+<li><p>via MS controller 7 - segment display - section 6.1;</p></li>
+<li><p>via touchscreen HMI (MSHMI) - section 6.2.</p></li>
+</ul>
+<section id="troubleshooting-via-ms-controller-7-segment-display">
+<h3><span class="section-number">1.7.1. </span>Troubleshooting via MS controller 7 - segment display<a class="headerlink" href="#troubleshooting-via-ms-controller-7-segment-display" title="Permalink to this headline"></a></h3>
+<section id="ms-controller-internal-errors">
+<h4><span class="section-number">1.7.1.1. </span>MS controller internal errors<a class="headerlink" href="#ms-controller-internal-errors" title="Permalink to this headline"></a></h4>
+<span id="id3"></span><table class="docutils align-default" id="id51" style="width: 100">
+<caption><span class="caption-number">Table 1.10 </span><span class="caption-text">MS controller internal errors</span><a class="headerlink" href="#id51" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Message</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible cases</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>E01</p></td>
+<td><p>DC bus overvoltage: An overvoltage has been detected on the internal DC bus.</p></td>
+<td><p>This fault may be due to overvoltage on the network or due to overloaded ballast resistor.</p></td>
+</tr>
+<tr class="row-odd"><td><p>E02</p></td>
+<td><p>Undervoltage DC Bus: The internal DC bus has dropped below the configured minimum voltage.</p></td>
+<td><p>This fault is managed while the drive is enabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>E03</p></td>
+<td><p>I²t motor: Overload on the motor.</p></td>
+<td><p>Mechanical hard point, bad power wiring, motor feedback problem, poorly controlled brake.</p></td>
+</tr>
+<tr class="row-odd"><td><p>E04</p></td>
+<td><p>Overcurrent: A current greater than the maximum measurable current has been detected on at least one of the motor phases.</p></td>
+<td><p>The drive must be powered 24VDC for 15 min before it can be unlocked.</p></td>
+</tr>
+<tr class="row-even"><td><p>E05</p></td>
+<td><p>Short circuit: A short-circuit between phases or the earthing of a motor phase has been detected.</p></td>
+<td><p>The drive must be powered 24VDC for 15 min before it can be unlocked.</p></td>
+</tr>
+<tr class="row-odd"><td><p>E06</p></td>
+<td><p>IGBT temperature: maximum temperature reached in the drive.</p></td>
+<td><p>It is impossible to acknowledge the fault until the temperature has gone back down.</p></td>
+</tr>
+<tr class="row-even"><td><p>E07</p></td>
+<td><p>Motor temperature: maximum temperature reached in the motor.</p></td>
+<td><p>It is impossible to acknowledge the fault until the temperature has gone back down.</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>E08</p></td>
+<td><p>Resolver fault: Defective resolver signals.</p></td>
+<td><p>Check resolver connection between motor and control cabinet and resolver connector.</p></td>
+</tr>
+<tr class="row-odd"><td><p>E09</p></td>
+<td><p>Coil temperature: maximum temperature reached in the self.</p></td>
+<td><p>It is impossible to acknowledge the fault until the temperature has gone back down.</p></td>
+</tr>
+<tr class="row-even"><td><p>E16</p></td>
+<td><p>Resolver saturation: Sin / Cos resolver signals received too high.</p></td>
+<td><p>Check resolver connection between motor and control cabinet and resolver connector.</p></td>
+</tr>
+<tr class="row-odd"><td><p>E17</p></td>
+<td><p>24V auxiliary supply error.</p></td>
+<td><p>This fault is triggered if the 24V auxiliary power supply is noisy or has a voltage dip (&lt;15V). Check the 24V supply.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ms-faults-and-warnings">
+<h4><span class="section-number">1.7.1.2. </span>MS faults and warnings<a class="headerlink" href="#ms-faults-and-warnings" title="Permalink to this headline"></a></h4>
+<span id="id4"></span><table class="docutils align-default" id="id52" style="width: 100">
+<caption><span class="caption-number">Table 1.11 </span><span class="caption-text">MS faults and warnings</span><a class="headerlink" href="#id52" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Message</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible cases</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>E02</p></td>
+<td><p>Screwing command during self-test *</p></td>
+<td><p>Check for pressed/held down button for hoist lifting command.</p></td>
+</tr>
+<tr class="row-odd"><td><p>E03</p></td>
+<td><p>Unscrewing command during self-test *</p></td>
+<td><p>Check for pressed/held down button for hoist lowering command</p></td>
+</tr>
+<tr class="row-even"><td><p>E04</p></td>
+<td><p>Both commands during self-test *</p></td>
+<td><p>Check for pressed/held down button for hoist lifting and lowering command</p></td>
+</tr>
+<tr class="row-odd"><td><p>E05</p></td>
+<td><p>ON signal missing during self-test *</p></td>
+<td><p>ON signal from hoist missing (figure 12). Check electrical connection between hoist control cabinet and MS hoist cabinet. ON signal from hoist to MS is available Check hoist control</p></td>
+</tr>
+<tr class="row-even"><td><p>E10</p></td>
+<td><p>Blocked worm</p></td>
+<td><p>Worm is locked to recovery mechanism. Worm is stuck. Mechanical reset is needed. In case of Downward enable off after recovery operation, moving I opposite side from hoist is needed. Moving should continue until lamps indicators for upward and downward are on. After manual reentering, MS reset is necessary.</p></td>
+</tr>
+<tr class="row-odd"><td><p>E11</p></td>
+<td><p>Unscrewing enable switch not centered **</p></td>
+<td><p>Switch USCRE is not in correct position. Visual check is and centering is needed</p></td>
+</tr>
+<tr class="row-even"><td><p>E12</p></td>
+<td><p>Screwing enable switch not centered **</p></td>
+<td><p>Switch SCRE is not in correct position. Visual check is and centering is needed</p></td>
+</tr>
+<tr class="row-odd"><td><p>E13</p></td>
+<td><p>Unscrewing enable switch not made **</p></td>
+<td><p>USCRE switch is not reached from worm during Switch test. Visual check is needed.</p></td>
+</tr>
+<tr class="row-even"><td><p>E14</p></td>
+<td><p>Screwing enable switch not made **</p></td>
+<td><p>SCRE switch is not reached from worm during Switch test. Visual check is needed.</p></td>
+</tr>
+<tr class="row-odd"><td><p>E28</p></td>
+<td><p>Incorrect MS firmware version</p></td>
+<td><p>Please, contact Siguren technologies</p></td>
+</tr>
+<tr class="row-even"><td><p>F15</p></td>
+<td><p>Worm backlash too big detected (Play too big) <a href="#id5"><span class="problematic" id="id6">**</span></a><a href="#id7"><span class="problematic" id="id8">*</span></a></p></td>
+<td><p>Worm play is greater than defined.</p></td>
+</tr>
+<tr class="row-odd"><td><p>F17</p></td>
+<td><p>Worm backlash too small detected (Play too small) <a href="#id9"><span class="problematic" id="id10">**</span></a><a href="#id11"><span class="problematic" id="id12">*</span></a></p></td>
+<td><p>Worm play is smaller than defined.</p></td>
+</tr>
+<tr class="row-even"><td><p>F20</p></td>
+<td><p>Air detected</p></td>
+<td><p>Presence of air into the oil inside the damping chamber</p></td>
+</tr>
+<tr class="row-odd"><td><p>F22</p></td>
+<td><p>Damping too soft</p></td>
+<td><p>Damping nozzles too open</p></td>
+</tr>
+<tr class="row-even"><td><p>F23</p></td>
+<td><p>Damping too hard</p></td>
+<td><p>Damping nozzles too closed</p></td>
+</tr>
+<tr class="row-odd"><td><p>F33</p></td>
+<td><p>Unscrewing Overspeed. Overspeed during lowering</p></td>
+<td><p>Hoist speed exceeds maximum defined speed during lowering</p></td>
+</tr>
+<tr class="row-even"><td><p>F34</p></td>
+<td><p>Screwing Overspeed. Overspeed during lifting</p></td>
+<td><p>Hoist speed exceeds maximum defined speed during lifting</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In case of repetitive faults, please contact SIGUREN Technologies on address <a class="reference external" href="mailto:support&#37;&#52;&#48;siguren&#46;com">support<span>&#64;</span>siguren<span>&#46;</span>com</a>!</p>
+</div>
+</section>
+</section>
+<section id="mshmi">
+<h3><span class="section-number">1.7.2. </span>MSHMI<a class="headerlink" href="#mshmi" title="Permalink to this headline"></a></h3>
+<p>The MSHMI is a Schneider Magelis HMI STU 655/855 color graphic touchscreen terminal programmed with the MSHMI firmware by Siguren technologies. MSHMI communicates with MS controller via MODBUS RTU protocol - figure 24.</p>
+<dl class="simple">
+<dt>Figure 24 MSHMI</dt><dd><p>Advantages if using MSHMI to operating with MS® are:
+- Display MotoSuiveur® status information in the form of messages, event listings, graphics and numerical values;
+- Change the MotoSuiveur® configuration. Configuration is a secure access code at different levels;
+- Change operating mode of MotoSuiveur®;
+- Display maintenance information of MotoSuiveur®.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>INFORMATION
+MSHMI is not part from standard MS equipment and can be ordered additionally.</p>
+</div>
+</section>
+<section id="maintenance">
+<h3><span class="section-number">1.7.3. </span>6.3     Maintenance<a class="headerlink" href="#maintenance" title="Permalink to this headline"></a></h3>
+<blockquote>
+<div><p>Due to inherent dangers in the maintenance and testing of electrical equipment, special attention should be paid to safety, not only to the personnel working the immediate area but also to equipment under test, maintenance and repair.
+All personnel operating in the relevant area should observe these procedures and pay due regard to safety Local Safety Rules and Regulations.</p>
+</div></blockquote>
+<dl>
+<dt>It is advisable that at least two fully trained engineers be present at all times when the equipment is being tested, maintained or serviced.</dt><dd><p>All equipment under electrical test should have WARNING NOTICES displayed saying that equipment tests are in progress. Any ancillary equipment, for example, test equipment and instruments, should be safe and prominent notices around the equipment should advertise any danger, which may exist. Any notices displayed in pursuing these procedures should be removed as soon as they are no longer applicable, to emphasize the special significance of their presence.
+If it becomes necessary to carry out maintenance, testing or setting up to work on the equipment requiring access by opening doors, removing covers etc., then safety hazards may arise. Then risk assessments should be carried out and safe-working practices followed.
+A duty holder should be responsible for ensuring that the equipment is made accessible only to authorized personnel to carry out specific tasks after receiving permission.</p>
+</dd>
+<dt>The user should ensure that maintenance setting up and authorized and competent persons only carry out testing of the equipment. The following basic rules should be adhered to:</dt><dd><ol class="arabic simple">
+<li><p>Before commencing maintenance works, the supply to the equipment must be isolated, locked off and the appropriate safety documents issued.</p></li>
+<li><p>Comply with safe working conditions.</p></li>
+<li><p>Do not work on the equipment when it is energized.</p></li>
+<li><p>Ensure that all persons working on the equipment are familiar with instructions and information provided in this manual.</p></li>
+</ol>
+<p>5. Providing that the equipment is functioning correctly and all personnel responsible for operating it are complying with the conditions specified, the electrical equipment may be deemed to be “properly used” and should be safe and free from health hazards.
+The reliability of the Motosuiveur® will depend if the maintenance procedure is strictly adhered to. Maintenance operations are to be done based either on the Maintenance type displayed on MS controller 7 - segment display or on a time basis wherever the smallest value applies.</p>
+</dd>
+</dl>
+<p>Maintenance Intervals: - A= Weekly, B= Monthly, C= 3 Monthly, D= 6 Monthly E= Annually, F= 2 Years, G=5 Years, H=10 Years
+Table 2 MS maintenance intervals
+MotoSuiveur® Unit       A       B       C       D       E       F       G       H       Worm Rotation Count (HMI)       Controller 7-Segment Display
+MS fixation to barrel and to hoist structure                                                                   75E6     ;  ;  ;</p>
+<blockquote>
+<div><p>Visual inspection. Check Fasteners, etc.</p>
+</div></blockquote>
+<p>MS Motor Transmission Grease:
+REPSOL NLGI 00                                                                 75E6     ;  ;  ;</p>
+<blockquote>
+<div><p>Add or Replace if necessary</p>
+</div></blockquote>
+<p>Oil Level
+SIGUREN MS Oil SQ32                                                                    75E6     ;  ;  ;</p>
+<blockquote>
+<div><p>Visual inspection. Add if necessary.</p>
+</div></blockquote>
+<p>Worm Outer Piston Assy
+Part No: MSL-01-P04                                                                    150E6    ;  ;</p>
+<blockquote>
+<div><p>Replace *</p>
+</div></blockquote>
+<p>MS Oil
+SIGUREN MS Oil SQ32                                                                    450E6    ;</p>
+<blockquote>
+<div><p>Replace. Clean magnet plugs.</p>
+</div></blockquote>
+<p>Wheel Lip Seal NBR 70 Sh A
+Reference: 100x120x7.5                                                                 900E6</p>
+<blockquote>
+<div><p>Replace *</p>
+</div></blockquote>
+<p>O-Rings NBR 70 Sh A
+References: 200x2; 53x4                                                                900E6   D</p>
+<blockquote>
+<div><p>Replace *</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Replace earlier if leaks are present and maintenance history is unknown</p></li>
+</ul>
+<p>Table 3 Integrated recovery mechanism maintenance intervals
+Integrated Recovery system of MotoSuiveur® Unit A       B       C       D       E       F       G       H       Worm Rotation Count (HMI)       Controller 7-Segment Display
+Fixation to MS Unit                                                                    75E6     ;  ;  ;</p>
+<blockquote>
+<div><p>Visual inspection. Check Fasteners</p>
+</div></blockquote>
+<p>Recovery Transmission Grease:
+REPSOL NLGI 00                                                                 -               -</p>
+<blockquote>
+<div><p>Add or Replace if necessary</p>
+</div></blockquote>
+<dl class="simple">
+<dt>IR system engagement                                                                   75E6     ;  ;  ;</dt><dd><p>Test Engagement / Disengagement Function</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>Replace earlier if leaks are present and maintenance history is unknown</p></li>
+</ul>
+</section>
+</section>
+<section id="appendix-1-signal-lamps">
+<h2><span class="section-number">1.8. </span>Appendix 1: Signal Lamps<a class="headerlink" href="#appendix-1-signal-lamps" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p>Table 1 Combination of active and inactive signal lams</p>
+</div></blockquote>
+<p>Signal lamp     Status  Correction
+Fault   Enabled Healthy Recovery mode   Recovery engaged
+0       0       0       1       0       MS Power off. Recovery pre-engaged      Check MS electrical equipment and MS power supply. Check for fault or warning number.
+0       0       0       1       1       MS Power off. Recovery engaged (Recovery mode)  Check MS electrical equipment and MS power supply. Check for fault or warning number.
+0       1       0       0       0       Not allowed (Indication for hardware problem)   Check electrical equipment. Check for fault or warning number.
+1       0       0       0       0       MS Hardware fault. (wiring, power supply, etc.) Check MS fault number.
+1       1       0       0       0       Not allowed (Indication for hardware problem)   Check MS electrical equipment. Check for MS fault or warning number.
+0       0       1       1       0       Self-test or recovery pre-engagement    -
+0       0       1       1       1       Self-test or recovery mode      -
+0       1       1       0       0       Normal (ready or following)     -
+1       0       1       0       0       MS Fault (overspeed, self-test, etc.)   Check fault or warning number.
+1       1       1       0       0       Not allowed (Indication for hardware problem)   Check electrical equipment. Check for fault or warning number.</p>
+<dl class="simple">
+<dt>Legend:</dt><dd><p>Mandatory signals/indicators
+Optional signals/indicators</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to MotoSuiveur documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Siguren Technologies.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

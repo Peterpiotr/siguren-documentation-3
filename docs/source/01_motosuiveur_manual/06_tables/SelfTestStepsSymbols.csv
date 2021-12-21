@@ -1,0 +1,10 @@
+﻿Symbol,Description,Symbol,Description
+|image001|,Homing,|image003|,Un-screwing enable switch not made
+|image039|,Waiting piston return,|image007|,Screwing enable switch not made
+|image009|,Blocked,|image011|,Screwing enable switch not centered
+|image013|,Checking MS firmware (Soft),|image015|,Un-screwing enable switch not centered
+|image017|,Electrical test,|image009|,Damping plus*
+|image021|,Switch test,|image023|,Damping minus*
+|image025|,Damping*,|image027|,Play minus
+|image029|,Air*,|image031|,Play plus
+|image033|,Play,|image035|/|image036|,Error / Fault

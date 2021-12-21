@@ -1,0 +1,6 @@
+﻿№,Name,Description
+1,V,Motor phase V
+2,PE,Motor earth
+3,W,Motor phase W
+4,U,Motor phase U
+"A, B, C, D",NC,Not connected

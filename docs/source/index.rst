@@ -14,8 +14,10 @@ Contents
 --------
 
 .. toctree::
+    :maxdepth: 2
+    :numbered:
 
-    11_Manual_ternium/manual_ternium
+    01_motosuiveur_manual/motosuiveur_manual.rst
 
     Getting started
         Basic knowledge
