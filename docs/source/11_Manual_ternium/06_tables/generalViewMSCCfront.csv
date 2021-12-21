@@ -1,0 +1,14 @@
+﻿№,Name,Description
+1,Hoist enabled lamp,MS authorizes hoist movements
+2,Fault lamp,MS is in fault
+3,Upward enabled lamp,MS authorizes hoist for upward movement
+4,Backup/Recovery off/on selector key,Off - normal movement
+,,ON – Backup mode
+,,ON + Reset – Recovery mode
+5,Backup/Recovery down/up key,Up/Down command for Recovery mode
+6,Enable override selector key,Allow hoist movement when (1) is off
+7,Reset button,MS reset
+8,Healthy lamp,MS controller and MS motor healthy
+9,Downward enable lamp,MS authorizes hoist for downward movement
+10,Recovery mode lamp,Active Backup/Recovery mode
+11,Recovery engaged lamp,Recovery is engaged

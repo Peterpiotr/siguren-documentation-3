@@ -1,0 +1,12 @@
+﻿№,Name,Description
+1,NC,Not connected
+2,TEMP-,Motor temperature sensor Lo
+3,COS-,Cosine Lo
+4,SIN-,Sine Lo
+5,REF-,Reference Lo
+6,TEMP+,Motor temperature sensor Hi
+7,COS+,Cosine Hi
+8,SIN+,Sine Hi
+9,REF+,Reference Hi
+10,NC,Not connected
+11,NC,Not connected

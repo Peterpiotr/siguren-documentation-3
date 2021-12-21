@@ -1,0 +1,13 @@
+﻿Message,Description,Possible cases
+E01,DC bus overvoltage: An overvoltage has been detected on the internal DC bus. ,This fault may be due to overvoltage on the network or due to overloaded ballast resistor.
+E02,Undervoltage DC Bus: The internal DC bus has dropped below the configured minimum voltage. ,This fault is managed while the drive is enabled.
+E03,I²t motor: Overload on the motor.,"Mechanical hard point, bad power wiring, motor feedback problem, poorly controlled brake."
+E04,Overcurrent: A current greater than the maximum measurable current has been detected on at least one of the motor phases.,The drive must be powered 24VDC for 15 min before it can be unlocked.
+E05,Short circuit: A short-circuit between phases or the earthing of a motor phase has been detected.,The drive must be powered 24VDC for 15 min before it can be unlocked.
+E06,IGBT temperature: maximum temperature reached in the drive.,It is impossible to acknowledge the fault until the temperature has gone back down.
+E07,Motor temperature: maximum temperature reached in the motor.,It is impossible to acknowledge the fault until the temperature has gone back down.
+,,
+E08,Resolver fault: Defective resolver signals.,Check resolver connection between motor and control cabinet and resolver connector.
+E09,Coil temperature: maximum temperature reached in the self. ,It is impossible to acknowledge the fault until the temperature has gone back down.
+E16,Resolver saturation: Sin / Cos resolver signals received too high.,Check resolver connection between motor and control cabinet and resolver connector.
+E17,24V auxiliary supply error. ,This fault is triggered if the 24V auxiliary power supply is noisy or has a voltage dip (<15V). Check the 24V supply.

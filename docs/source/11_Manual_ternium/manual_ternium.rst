@@ -1,29 +1,41 @@
 MotoSuiveur Manual
-======================================================================
+====================
+
+Revision history
+-----------------
+
+.. kept from word document, useful?
+
+.. csv-table:: test table 2
+   :file: 06_tables/revisionTable2020.csv
+   :header-rows: 1
 
 Introduction
 ----------------
 
 The object of this manual is to present operation modes of MotoSuiveur® (further called MS). Manual describes electrical part of MS, MS operation modes, troubleshooting and maintenance. On figure 1 is presented MS main block diagram.
 
-.. image:: 05_images/MS_mainBlockDiagram.png
+.. figure:: 05_images/MS_mainBlockDiagram.png
 	:scale: 75 %
 	:align: center
-
-Figure 1 MotoSuiveur® main block diagram
+	
+	MotoSuiveur® main block diagram
 
 
 Glossary
 ---------
 
-.. image:: 05_images/glossaryImage.png
+.. figure:: 05_images/glossaryImage.png
 	:scale: 75 %
 	:align: center
+   	
+	MS unit components	
 
-.. csv-table:: table
-   :file: 06_tables/MSunitComponents-test.csv
-   :widths: 10, 40, 50
+.. csv-table:: MS unit components
+   :file: 06_tables/ms_unit_components.csv
    :header-rows: 1
+   :width: 11
+   :widths: 1 5 5
 
 Figure 2 MS unit components
  
@@ -68,23 +80,20 @@ Connectors C6 and C7 (figure 6 points 3 and 4) should be made according followin
 	Figure 7 d) shows general MS motor view. 
  
 a) C7 connector
- 
+
 b) C6 connector
 
-=========	=== 	=====   	===========
-Connector	№		Name		Description
-=========	=== 	=====   	===========
-1			NC		Not connected
-2	TEMP-	Motor temperature sensor Lo
-3	COS-	Cosine Lo
-4	SIN-	Sine Lo
-5	REF-	Reference Lo
-6	TEMP+	Motor temperature sensor Hi
-7	COS+	Cosine Hi
-8	SIN+	Sine Hi
-9	REF+	Reference Hi
-10	NC	Not connected
-11	NC	Not connected
+.. figure:: 05_images/connectorDrawing.png
+	:scale: 100 %
+	:align: center
+
+	test caption
+
+.. csv-table:: test table 2
+   :file: 06_tables/connectorTable01.csv
+   :header-rows: 1
+   :width: 100
+   :widths: 1, 5, 5
 
 Connector 	№	Name	Description
 1	V	Motor phase V
@@ -135,7 +144,14 @@ Figure 9 Position mechanical switches
 5	+24VDC. Supply Recovery position switch
 6	Signal from position switch
 
-Figure 10 Termina block TSW
+Figure 10 Terminal block TSW
+
+.. sidebar:: Optional Sidebar Title
+   :subtitle: Optional Sidebar Subtitle
+
+   Subsequent indented lines comprise
+   the body of the sidebar, and are
+   interpreted as body elements.
 
 Terminal blocks in control cabinet are for connection between MS and control cabinet. Terminal blocks are described in Table 1.
 Table 1 Control cabinet terminals
@@ -149,6 +165,8 @@ T6	MS motor power supply
 T7	MS motor resolver
 T8	Recovery motor power supply
 T9	Heater
+
+
 
 Figure 11 shows general view of connection between MS and control cabinet (MSCC). For more detail about connection, please review electrical circuit diagram for the corresponding project.
 Figure 11 General view of connection between MS and MSCC

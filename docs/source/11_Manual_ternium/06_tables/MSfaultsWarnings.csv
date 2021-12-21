@@ -1,0 +1,18 @@
+﻿Message,Description,Possible cases
+E02,Screwing command during self-test *,Check for pressed/held down button for hoist lifting command. 
+E03,Unscrewing command during self-test *,Check for pressed/held down button for hoist lowering command
+E04,Both commands during self-test *,Check for pressed/held down button for hoist lifting and lowering command
+E05,ON signal missing during self-test *,ON signal from hoist missing (figure 12). Check electrical connection between hoist control cabinet and MS hoist cabinet. ON signal from hoist to MS is available Check hoist control
+E10,Blocked worm,"Worm is locked to recovery mechanism. Worm is stuck. Mechanical reset is needed. In case of Downward enable off after recovery operation, moving I opposite side from hoist is needed. Moving should continue until lamps indicators for upward and downward are on. After manual reentering, MS reset is necessary."
+E11,Unscrewing enable switch not centered **,Switch USCRE is not in correct position. Visual check is and centering is needed
+E12,Screwing enable switch not centered **,Switch SCRE is not in correct position. Visual check is and centering is needed
+E13,Unscrewing enable switch not made **,USCRE switch is not reached from worm during Switch test. Visual check is needed.
+E14,Screwing enable switch not made **,SCRE switch is not reached from worm during Switch test. Visual check is needed.
+E28,Incorrect MS firmware version,"Please, contact Siguren technologies"
+F15,Worm backlash too big detected (Play too big) ***,Worm play is greater than defined.
+F17,Worm backlash too small detected (Play too small) ***,Worm play is smaller than defined.
+F20,Air detected,Presence of air into the oil inside the damping chamber
+F22,Damping too soft,Damping nozzles too open
+F23,Damping too hard,Damping nozzles too closed
+F33,Unscrewing Overspeed. Overspeed during lowering,Hoist speed exceeds maximum defined speed during lowering
+F34,Screwing Overspeed. Overspeed during lifting,Hoist speed exceeds maximum defined speed during lifting

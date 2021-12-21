@@ -1,0 +1,12 @@
+﻿Signal lamp,,,,,Status,Correction
+Fault,Enabled,Healthy,Recovery mode,Recovery engaged,,
+0,0,0,1,0,MS Power off. Recovery pre-engaged,Check MS electrical equipment and MS power supply. Check for fault or warning number.
+0,0,0,1,1,MS Power off. Recovery engaged (Recovery mode),Check MS electrical equipment and MS power supply. Check for fault or warning number.
+0,1,0,0,0,Not allowed (Indication for hardware problem),Check electrical equipment. Check for fault or warning number.
+1,0,0,0,0,"MS Hardware fault. (wiring, power supply, etc.)",Check MS fault number.
+1,1,0,0,0,Not allowed (Indication for hardware problem),Check MS electrical equipment. Check for MS fault or warning number.
+0,0,1,1,0,Self-test or recovery pre-engagement,-
+0,0,1,1,1,Self-test or recovery mode,-
+0,1,1,0,0,Normal (ready or following),-
+1,0,1,0,0,"MS Fault (overspeed, self-test, etc.)",Check fault or warning number.
+1,1,1,0,0,Not allowed (Indication for hardware problem),Check electrical equipment. Check for fault or warning number.

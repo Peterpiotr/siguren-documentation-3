@@ -1,0 +1,10 @@
+﻿During movement,,
+Symbol,Description,Explanation
+,Centering,"The worm is positioned to the center of its backlash, to prepare for the next movement"
+,Screwing Tackling,Upward movement start
+,"Unscrewing, Tackling",Downward movement start
+,"Screwing, Following",Upward movement following
+,"Unscrewing, Following",Downward movement following
+,Near Overspeed,Starts blinking the more and more rapidly as the speed approaches the 'overspeed' threshold setting
+,Near Underspeed,Starts blinking the more and more rapidly as the speed approaches the 'underspeed' threshold setting
+,Fault,Fault detected

@@ -1,0 +1,27 @@
+﻿MotoSuiveur® Unit,A,B,C,D,E,F,G,H,Worm Rotation Count (HMI),Controller 7-Segment Display
+MS fixation to barrel and to hoist structure,,,,,l,,,,7.50E+07,; 
+,,,,,,,,,,; 
+,,,,,,,,,,; 
+,,,,,,,,,,
+,"Visual inspection. Check Fasteners, etc.",,,,,,,,,
+MS Motor Transmission Grease:,,,,,l,,,,7.50E+07,; 
+REPSOL NLGI 00,,,,,,,,,,; 
+,,,,,,,,,,; 
+,,,,,,,,,,
+,Add or Replace if necessary,,,,,,,,,
+Oil Level,,,,,l,,,,7.50E+07,; 
+SIGUREN MS Oil SQ32,,,,,,,,,,; 
+,,,,,,,,,,; 
+,,,,,,,,,,
+,Visual inspection. Add if necessary.,,,,,,,,,
+Worm Outer Piston Assy,,,,,,,l,,1.50E+08,; 
+Part No: MSL-01-P04,,,,,,,,,,; 
+,,,,,,,,,,
+,Replace *,,,,,,,,,
+MS Oil,,,,,,,,l,4.50E+08,; 
+SIGUREN MS Oil SQ32,,,,,,,,,,
+,Replace. Clean magnet plugs.,,,,,,,,,
+Wheel Lip Seal NBR 70 Sh A,,,,,,,,l,9.00E+08,
+Reference: 100x120x7.5,Replace *,,,,,,,,,
+O-Rings NBR 70 Sh A,,,,,,,,l,9.00E+08,D
+References: 200x2; 53x4,Replace *,,,,,,,,,

@@ -1,0 +1,10 @@
+﻿Terminal block,Description
+T1,Power supply
+T2,Digital inputs
+T3,MS sensors/switches
+T4,Digital outputs
+T5,Analogue I/O
+T6,MS motor power supply
+T7,MS motor resolver
+T8,Recovery motor power supply
+T9,Heater
