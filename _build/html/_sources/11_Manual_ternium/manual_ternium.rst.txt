@@ -2,7 +2,7 @@ MotoSuiveur Manual
 ====================
 
 Revision history
------------------
+----------------------
 
 .. kept from word document, useful?
 
@@ -13,9 +13,10 @@ Revision history
 Introduction
 ----------------
 
-The object of this manual is to present operation modes of MotoSuiveur® (further called MS). Manual describes electrical part of MS, MS operation modes, troubleshooting and maintenance. On figure 1 is presented MS main block diagram.
+The object of this manual is to present operation modes of MotoSuiveur® (further called MS). Manual describes electrical part of MS, MS operation modes, troubleshooting and maintenance. On :numref:`MotoSuiveur® main block diagram` is presented MS main block diagram.
 
-.. figure:: 05_images/MS_mainBlockDiagram.png
+.. _MotoSuiveur® main block diagram: 
+.. figure:: 05_images/ms_main_block_diagram.png
 	:scale: 75 %
 	:align: center
 	
