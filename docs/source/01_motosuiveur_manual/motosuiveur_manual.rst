@@ -342,7 +342,7 @@ viewed from cam part of the screw shaft as is shown
 on :numref:`MS Worm rotating directions`.
  
 .. _MS Worm rotating directions:
-.. figure:: 05_images/MSwormRotatingDirections.png
+.. figure:: 05_images/MSwormrotatingDirections.png
 	:scale: 80 %
 	:align: center
 
@@ -494,7 +494,7 @@ presented. On :numref:`Symbols displayed on 7-segment display on MS controller` 
 following operation mode.
 
 .. _Main principle of following:
-.. figure:: 05_images/mainprinciplefollowing.png
+.. figure:: 05_images/mainPrincipleFollowing.png
 	:scale: 100 %
 	:align: center
 
