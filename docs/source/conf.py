@@ -37,11 +37,12 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
+html_logo = 'siguren_logo_white.png'
+
 html_theme_options = {
 #    'analytics_id': 'G-XXXXXXXXXX',  #  Provided by Google in your dashboard
 #    'analytics_anonymize_ip': False,
-    'logo_only': False,
-    'html_logo': "logo_mail_sign.png",
+    'logo_only': True,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
 #    'style_external_links': False,
