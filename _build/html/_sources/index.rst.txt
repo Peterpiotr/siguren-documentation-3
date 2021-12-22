@@ -3,23 +3,21 @@ Welcome to MotoSuiveur documentation!
 
 **MotoSuiveur** is a hoist safety equipment that will ....
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
 .. note::
 
-   This project is under active development.
+   This documentation is under active development.
 
 Contents
 --------
 
 .. toctree::
-    :maxdepth: 2
     :numbered:
+    :maxdepth: 2
 
     01_motosuiveur_manual/motosuiveur_manual.rst
+    02_load_recovery_capabilities/load_recovery_capabilities.rst
 
-    Getting started
+..    Getting started
         Basic knowledge
             Operating principle
         Selection guidelines
