@@ -1,7 +1,8 @@
 Welcome to MotoSuiveur documentation!
 ===================================
 
-**MotoSuiveur** is a hoist safety equipment that will ....
+**MotoSuiveur** is the first hoist safety solution designed to actively permit only safe operation, and instantly default to a safe arrested state when hoisting is disrupted.
+Offering 100x shorter arrest distances than emergency braking systems.
 
 .. note::
 
@@ -16,6 +17,7 @@ Contents
 
     01_motosuiveur_manual/motosuiveur_manual.rst
     02_load_recovery_capabilities/load_recovery_capabilities.rst
+    03_risk_reduction_using_ms/risk_reduction_using_ms.rst
 
 ..    Getting started
         Basic knowledge

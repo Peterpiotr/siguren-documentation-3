@@ -69,7 +69,7 @@ Furthermore, the MS can control the brake opening / closing, thus making
 the gravity load recovery automated.
 
 Instructions
-^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++
 
 .. _Hydraulic Damping MS step lowering: 
 .. figure:: 05_images/stepLowering.png
@@ -101,7 +101,7 @@ by using a standard wrench.
 In case of power outage, the MS can be UPS/battery operated.
 
 Instructions
-^^^^^^^^^^^^^^
++++++++++++++++++
 
 .. _Backup Mode gravity lowering: 
 .. figure:: 05_images/backupGravityLowering.png
