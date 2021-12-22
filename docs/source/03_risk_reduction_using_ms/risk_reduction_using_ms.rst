@@ -12,7 +12,7 @@ for design — Risk assessment and risk reduction
 	Risk reduction process according to ISO 12100-2010
 
 
-1) We assume that the risk analysis is already internally done by Arcelor. 
+1) We assume that the risk analysis is already internally done by the end-user. 
 We guess that the identified risk is: “A load drop can lead to severe injuries 
 or damage to health or death”.
 
@@ -43,7 +43,7 @@ dramatically reduced. Further risk reduction may not be necessary **.
 
 (We assume that the measures called by Clause 6.1 steps 2 and 3 are already in place).
 
-6) SIGUREN can assist Arcelor with the documentation that shall demonstrate the 
+6) SIGUREN can assist the end-user with the documentation that shall demonstrate the 
 results and how the risk reduction has been achieved.
 
 * According to Clause 3.20 an inherently safe design measure is a protective 
